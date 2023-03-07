@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body{
+    display: flex;  /*deixar do lado*/
+    flex-wrap: wrap; /*ficar um debaixdo do outro no mobile*/
+    margin-left: 3rem;
+}
+
+/* Apresentação do Evento */
+#about-container{
+    flex: 1.4; /*porcento maior que o outro lado*/
+    padding: 2rem 4 rem;
+
+}
+
+#brand{
+    display: flex;
+    align-items: center; /*centralizar*/
+    font-size: 0.8rem; /*tamanho do texto*/
+    margin-bottom: 1rem; /*distancia para o de baixo*/    
+}
+
+#brand img{
+    height: 50px; /*altura imagem*/
+    margin-right: 0.6rem; /*afastamento a direita*/
+
+}
+
+#about-container h2{
+    font-size: 2.4rem;
+    max-width: 500px; /*largura */
+    margin-bottom: 1rem;
+}
+
+
+#exclusive{
+    text-transform: uppercase; /* tudo maiúsculo*/
+    color: #0075ff;
+    font-weight: bold; /*tamanho dos lados*/
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+#date{
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+#description{
+    max-width: 500px;
+    margin-bottom: 1rem;
+    line-height: 1.4rem; /*espaçamento de linhas*/
+}
+
+#about-container h4{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#user-container{
+    display: flex;
+    flex-wrap: wrap; /*Quando nao tem espaço para o lado,ele manda para baixo*/
+    gap: 1rem;
+    margin-right: 2rem;
+}
+.user-card{
+    border: 2px solid #ccc;
+    padding: 1rem;
+    width: 180px;
+    text-align: center;
+    height: 190px;
+}
+
+.user-card img{
+    width: 120px;
+    border-radius: 50%; /*Arrendondar img*/
+    margin-bottom: 1rem;
+}
+
+.user-card .user-name{
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.user-card .user-role{
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Formulário */
+#form-container{
+    flex: 1;
+    background-image: url("../IMAGES/fundo\ azul.avif");
+    background-size: cover; /* tira o zoom */
+    color: #fff;
+    height: 689px;
+
+}
+
+#forma-inner{
+    margin: 3rem;
+    padding: 3rem;
+    border: 2px solid #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;/*ajeita o flex*/
+    align-items: center;
+}
+
+#forma-inner h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#forma-inner p {
+    margin-bottom: 1rem;
+}
+
+#register-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+#name-container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#register-form input{
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-radius: 3px;
+}
+
+#email{
+    min-width: 100%;
+}
+
+#register-form input[type="submit"]{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1,1rem;
+    font-weight: bold;
+    cursor: pointer; /*mudar o mouse*/
+    transition: 0.4s; /*quanto tempo animação*/
+}
+
+/*mudar de cor quando clica*/
+#register-form input[type="submit"]:hover{
+    background-color: #fff;
+    color: #0075ff;
+}
+
+#benefits {
+    text-align: left;
+    align-self: start; /*mudar oq colocou antes*/
+}
+
+#benefits h4{
+    font-size: 1,4rem;
+    margin-bottom: 1rem;
+}
+
+#benefits ul{
+    list-style-position: inside;
+}
+
+#benefits li{
+    margin-bottom: 0.5rem;
+}
+
+/*responsive*/
+
+
+
+
+
+
+
